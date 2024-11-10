@@ -1,4 +1,6 @@
-function fact(x){
+function fat(x){
     if(x <= 1) return 1;
-    else return fact(x-1) * x;
+    else return fat(x-1) * x;
 }
+
+module.exports = fat;
