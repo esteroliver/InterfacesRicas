@@ -1,0 +1,31 @@
+name: Node.js CI
+
+on:
+	# esse pipeline será rodado sempre que houver um push e um pull request
+  # em todas as branchs
+  push:
+    branches: [ "*" ]
+  pull_request:
+    branches: [ "*" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest # cria uma máquina Ubuntu zerada no GitHub
+
+    strategy:
+      matrix:
+        node-version: [22.x] # configura a versão do node.js como 22.x
+
+    steps:
+    - uses: actions/checkout@v4.2.2 # baixa o código da aplicação
+
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v4.1.0
+      with:
+        node-version: ${{ matrix.node-version }}
+        cache: 'npm' # instala o JavaScript
+
+    - run: npm run build --if-present # constrói o sistema
+
+    - run: npm test # roda os testes do nosso sistema
