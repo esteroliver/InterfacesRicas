@@ -28,4 +28,4 @@ jobs:
 
     - run: npm run build --if-present # constrói o sistema
 
-    - run: npm test # roda os testes do nosso sistema
+    - run: npm run test # roda os testes do nosso sistema
