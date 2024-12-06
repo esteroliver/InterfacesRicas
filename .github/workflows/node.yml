@@ -26,6 +26,8 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm' # instala o JavaScript
 
+    - run: npm install
+
     - run: npm run build --if-present # constrói o sistema
 
     - run: npm run test # roda os testes do nosso sistema
