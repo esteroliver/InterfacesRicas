@@ -1,7 +1,7 @@
 name: Node.js CI
 
 on:
-	# esse pipeline será rodado sempre que houver um push e um pull request
+# esse pipeline será rodado sempre que houver um push e um pull request
   # em todas as branchs
   push:
     branches: [ "*" ]
