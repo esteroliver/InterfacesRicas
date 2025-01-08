@@ -1,13 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1733490017227" clover="3.2.0">
-  <project timestamp="1733490017228" name="All files">
-    <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1" elements="9" coveredelements="9" complexity="0" loc="4" ncloc="4" packages="1" files="1" classes="1"/>
-    <file name="fatorialTS.ts" path="/workspaces/InterfacesRicas/fatorial/fatorialTS.ts">
+<coverage generated="1736341418163" clover="3.2.0">
+  <project timestamp="1736341418164" name="All files">
+    <metrics statements="42" coveredstatements="42" conditionals="14" coveredconditionals="14" methods="7" coveredmethods="7" elements="63" coveredelements="63" complexity="0" loc="42" ncloc="42" packages="2" files="6" classes="6"/>
+    <package name="fatorial">
       <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-      <line num="1" count="5" type="cond" truecount="1" falsecount="0"/>
-      <line num="2" count="5" type="cond" truecount="2" falsecount="0"/>
-      <line num="3" count="3" type="cond" truecount="1" falsecount="0"/>
-      <line num="4" count="5" type="stmt"/>
-    </file>
+      <file name="fatorialTS.ts" path="/workspaces/InterfacesRicas/fatorial/fatorialTS.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <line num="1" count="5" type="cond" truecount="1" falsecount="0"/>
+        <line num="2" count="5" type="cond" truecount="2" falsecount="0"/>
+        <line num="3" count="3" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="5" type="stmt"/>
+      </file>
+    </package>
+    <package name="funcoes_array">
+      <metrics statements="38" coveredstatements="38" conditionals="10" coveredconditionals="10" methods="6" coveredmethods="6"/>
+      <file name="questao01.ts" path="/workspaces/InterfacesRicas/funcoes_array/questao01.ts">
+        <metrics statements="19" coveredstatements="19" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="7" type="stmt"/>
+        <line num="5" count="7" type="stmt"/>
+        <line num="6" count="7" type="stmt"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="9" count="1" type="stmt"/>
+        <line num="10" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="11" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="13" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="14" count="7" type="stmt"/>
+        <line num="15" count="7" type="stmt"/>
+        <line num="16" count="7" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+      </file>
+      <file name="questao02.ts" path="/workspaces/InterfacesRicas/funcoes_array/questao02.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+      </file>
+      <file name="questao03.ts" path="/workspaces/InterfacesRicas/funcoes_array/questao03.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+      <file name="questao04.ts" path="/workspaces/InterfacesRicas/funcoes_array/questao04.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="1" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="2" count="1" type="stmt"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+      <file name="questao05.ts" path="/workspaces/InterfacesRicas/funcoes_array/questao05.ts">
+        <metrics statements="5" coveredstatements="5" conditionals="2" coveredconditionals="2" methods="1" coveredmethods="1"/>
+        <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="2" count="1" type="cond" truecount="1" falsecount="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="1" type="stmt"/>
+      </file>
+    </package>
   </project>
 </coverage>
