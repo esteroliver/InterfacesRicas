@@ -1,4 +1,4 @@
-class Pagamento{
+export class Pagamento{
     _valor : number
     constructor(valor : number) {
         this._valor = valor        
@@ -20,7 +20,7 @@ class Pagamento{
     }
 }
 
-class CartaoCredito extends Pagamento{
+export class CartaoCredito extends Pagamento{
     _validade : string
     _parcelas : number
     constructor(valor : number, validade : string, parcelas : number){
@@ -49,7 +49,7 @@ class CartaoCredito extends Pagamento{
     }
 }
 
-class Boleto extends Pagamento{
+export class Boleto extends Pagamento{
     _validade : string
     constructor(valor: number, validade : string){
         super(valor)
@@ -65,7 +65,3 @@ class Boleto extends Pagamento{
         console.log("Validade do boleto: ", this._validade)
     }
 }
-
-export const pag = new Pagamento(100);
-export const cart = new CartaoCredito(100, "30/01/2025", 2)
-export const bol = new Boleto(100, "30/01/2025")
