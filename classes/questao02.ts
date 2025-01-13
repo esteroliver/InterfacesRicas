@@ -3,6 +3,12 @@ class Pagamento{
     constructor(valor : number) {
         this._valor = valor        
     }
+    get valor() : number{
+        return this._valor
+    }
+    set valor(valor : number){
+        this._valor = valor
+    }
     realizarPagamento() : void{
         console.log("Realizando pagamento!")
     }
@@ -22,6 +28,18 @@ class CartaoCredito extends Pagamento{
         this._validade = validade
         this._parcelas = parcelas
     }
+    get validade() : string{
+        return this._validade
+    }
+    set validade(validade : string){
+        this._validade = validade
+    }
+    get parcelas() : number{
+        return this._parcelas
+    }
+    set parcelas(parcelas : number){
+        this._parcelas = parcelas
+    }
     validadeCartao() : void{
         console.log("Validade do cartão: ", this._validade)
     }
@@ -37,7 +55,17 @@ class Boleto extends Pagamento{
         super(valor)
         this._validade = validade
     }
+    get validade() : string{
+        return this._validade
+    }
+    set validade(validade : string){
+        this._validade = validade
+    }
     validadeBoleto() : void{
         console.log("Validade do boleto: ", this._validade)
     }
 }
+
+export const pag = new Pagamento(100);
+export const cart = new CartaoCredito(100, "30/01/2025", 2)
+export const bol = new Boleto(100, "30/01/2025")
