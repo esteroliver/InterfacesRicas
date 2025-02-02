@@ -1,8 +1,9 @@
 <div style="display: flex; gap: 1rem; align-items: center;">
-    <p-floatlabel variant="on">
-        <input pInputText id="tarefa" autocomplete="off" />
-        <label for="tarefa">Título</label>
+    <p-floatlabel variant="in">
+        <input pInputText id="in_label" autocomplete="off" />
+        <label for="in_label">Título</label>
     </p-floatlabel>
+
     <p-inputnumber [showButtons]="true" buttonLayout="vertical" spinnerMode="vertical" inputId="vertical" [inputStyle]="{ width: '3rem' }">
         <ng-template #incrementbuttonicon>
             <span class="pi pi-plus"></span>
@@ -11,6 +12,7 @@
             <span class="pi pi-minus"></span>
         </ng-template>
     </p-inputnumber>
+
     <p-button label="Inserir" icon="pi pi-check"/>
 </div>
 
