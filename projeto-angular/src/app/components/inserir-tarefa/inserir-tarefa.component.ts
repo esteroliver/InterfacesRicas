@@ -1,11 +1,19 @@
 import { Component } from '@angular/core';
+import { InputTextModule } from 'primeng/inputtext';
+import { FloatLabelModule } from 'primeng/floatlabel';
+import { ButtonModule } from 'primeng/button';
+import { Tarefa } from '../tarefa';
 
 @Component({
   selector: 'app-inserir-tarefa',
-  imports: [],
+  imports: [
+    InputTextModule,
+    FloatLabelModule,
+    ButtonModule
+  ],
   templateUrl: './inserir-tarefa.component.html',
-  styleUrl: './inserir-tarefa.component.css'
 })
-export class InserirTarefaComponent {
 
+export class InserirTarefaComponent {
+  nova_tarefa = new Tarefa("", 1);
 }
