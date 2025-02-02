@@ -28,4 +28,18 @@ export class CrudTarefasComponent {
   removerTarefa(tarefa: Tarefa){
     this.tarefas = this.tarefas.filter(tarefaInterna => tarefaInterna !== tarefa);
   }
+
+  concluirTarefa(tarefa: Tarefa){
+    let tarefa_atualizada: Tarefa;
+    
+    const tarefa_concluida = this.tarefas.findIndex(
+      tarefaId => tarefaId.titulo === tarefa.titulo
+    );
+
+    if (tarefa_concluida !== -1) {
+      tarefa_atualizada = this.tarefas[tarefa_concluida]
+      tarefa_atualizada.concluida = true;
+      this.tarefas[tarefa_concluida] = tarefa_atualizada;
+    }
+  }
 }

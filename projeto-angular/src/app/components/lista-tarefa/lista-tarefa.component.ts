@@ -21,7 +21,14 @@ export class ListaTarefaComponent {
 
   @Output() remover_tarefa = new EventEmitter<Tarefa>();
 
+  @Output() concluir_tarefa = new EventEmitter<Tarefa>();
+
   removerTarefa(tarefa: Tarefa){
     this.remover_tarefa.emit(tarefa);
   }
+
+  concluirTarefa(tarefa: Tarefa){
+    this.concluir_tarefa.emit(tarefa);
+  }
+
 }

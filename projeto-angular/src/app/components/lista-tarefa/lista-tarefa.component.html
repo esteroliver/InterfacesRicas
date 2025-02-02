@@ -5,6 +5,7 @@
         <th>Prioridade</th>
         <th>Concluída</th>
         <th>Deletar</th>
+        <th>Concluir tarefa</th>
       </tr>
     </ng-template>
   
@@ -17,6 +18,9 @@
         </td>
         <td>
             <p-button icon="pi pi-trash" (onClick)="removerTarefa(tarefa)" />
+        </td>
+        <td>
+            <p-button icon="pi pi-check" (onClick)="concluirTarefa(tarefa)" />
         </td>
       </tr>
     </ng-template>
