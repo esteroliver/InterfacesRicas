@@ -10,4 +10,4 @@ export class TarefaComponent {
 
 }
 
-//inserir, atualizar, remover
+//botões para atualizar e remover
