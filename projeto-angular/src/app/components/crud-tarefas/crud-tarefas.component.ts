@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { Tarefa } from '../tarefa';
 import { InserirTarefaComponent } from '../inserir-tarefa/inserir-tarefa.component';
+import { ListaTarefaComponent } from '../lista-tarefa/lista-tarefa.component';
 
 @Component({
   selector: 'app-crud-tarefas',
   imports: [
-    InserirTarefaComponent
+    InserirTarefaComponent,
+    ListaTarefaComponent
   ],
   templateUrl: './crud-tarefas.component.html',
   styleUrl: './crud-tarefas.component.css'
