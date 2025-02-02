@@ -1,9 +1,10 @@
-<p-table [value]="tarefas" [paginator]="true" [rows]="5">
+<p-table [value]="lista_tarefas" [paginator]="true" [rows]="5">
     <ng-template pTemplate="header">
       <tr>
         <th>Título</th>
         <th>Prioridade</th>
         <th>Concluída</th>
+        <th>Deletar</th>
       </tr>
     </ng-template>
   
@@ -13,6 +14,9 @@
         <td>{{ tarefa.prioridade }}</td>
         <td>
           <p-tag [severity]="tarefa.concluida ? 'success' : 'danger'" [value]="tarefa.concluida ? 'Sim' : 'Não'"></p-tag>
+        </td>
+        <td>
+            <p-button icon="pi pi-trash" (onClick)="removerTarefa(tarefa)" />
         </td>
       </tr>
     </ng-template>

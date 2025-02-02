@@ -17,12 +17,6 @@ import { Tarefa } from '../tarefa';
 })
 
 export class ListaTarefaComponent {
-  tarefas = [
-    { titulo: 'Estudar Angular', prioridade: 1, concluida: false },
-    { titulo: 'Fazer compras', prioridade: 2, concluida: true },
-    { titulo: 'Reunião com a equipe', prioridade: 3, concluida: false },
-  ];
-
   @Input() lista_tarefas: Array<Tarefa> = [];
 
   @Output() remover_tarefa = new EventEmitter<Tarefa>();
@@ -30,5 +24,4 @@ export class ListaTarefaComponent {
   removerTarefa(tarefa: Tarefa){
     this.remover_tarefa.emit(tarefa);
   }
-
 }

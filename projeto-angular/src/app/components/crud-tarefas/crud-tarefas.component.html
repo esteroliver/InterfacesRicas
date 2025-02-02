@@ -1,2 +1,3 @@
 <app-inserir-tarefa (tarefa_inserida)="adicionarTarefa($event)"></app-inserir-tarefa>
-<app-lista-tarefa></app-lista-tarefa>
+<p-divider />
+<app-lista-tarefa (remover_tarefa)="removerTarefa($event)" [lista_tarefas]="tarefas"></app-lista-tarefa>
