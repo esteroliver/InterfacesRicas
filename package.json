@@ -11,6 +11,8 @@
     "test-ts": "ts-jest"
   },
   "dependencies": {
+    "@primeng/themes": "^19.0.5",
+    "primeng": "^19.0.5",
     "ts-jest": "^29.2.5"
   }
 }
