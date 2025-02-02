@@ -1,10 +1,10 @@
 <div style="display: flex; gap: 1rem; align-items: center;">
-    <p-floatlabel variant="in">
-        <input pInputText id="in_label" autocomplete="off" />
+    <p-floatlabel variant="on">
+        <input pInputText id="in_label" autocomplete="off" [(ngModel)]="nova_tarefa.titulo" />
         <label for="in_label">Título</label>
     </p-floatlabel>
 
-    <p-inputnumber [showButtons]="true" buttonLayout="vertical" spinnerMode="vertical" inputId="vertical" [inputStyle]="{ width: '3rem' }">
+    <p-inputnumber [showButtons]="true" buttonLayout="horizontal" spinnerMode="horizontal" inputId="horizontal" [inputStyle]="{ width: '2.5rem' }" [(ngModel)]="nova_tarefa.prioridade">
         <ng-template #incrementbuttonicon>
             <span class="pi pi-plus"></span>
         </ng-template>
