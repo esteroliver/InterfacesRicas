@@ -1,5 +1,4 @@
 <p-table [value]="tarefas" [paginator]="true" [rows]="5">
-    <!-- Cabeçalho da tabela -->
     <ng-template pTemplate="header">
       <tr>
         <th>Título</th>
@@ -8,7 +7,6 @@
       </tr>
     </ng-template>
   
-    <!-- Corpo da tabela -->
     <ng-template pTemplate="body" let-tarefa>
       <tr>
         <td>{{ tarefa.titulo }}</td>
